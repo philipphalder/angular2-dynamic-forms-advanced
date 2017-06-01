@@ -39,7 +39,7 @@
     <div *ngSwitchCase="'checkbox'" class="question-card-container" >  
       <md-card class="question-card"> 
             <label [attr.for]="question.key">{{question.label}}</label> 
-              <md-checkbox *ngFor="let opt of question.options" [(formControlName)]="question.key" [value]="opt.key">{{question.key}}//{{opt.value}}</md-checkbox>
+              <md-checkbox *ngFor="let opt of question.options" [(formControlName)]="question.key" [value]="opt.key">{{opt.value}}</md-checkbox>
         <div class="errorMessage" *ngIf="!isValid">{{question.label}} is required</div>
       </md-card>
     </div>

@@ -6,7 +6,7 @@ import { QuestionService } from './services/question.service';
   selector: 'my-app',
   template: `
     <div>
-      <md-toolbar>Angular2 dynamic forms advanced</md-toolbar>
+      <md-toolbar color="primary">Angular2 dynamic forms advanced</md-toolbar>
       <dynamic-form [questions]="questions"></dynamic-form>
     </div>
   `,
