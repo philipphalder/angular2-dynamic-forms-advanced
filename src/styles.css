@@ -12,3 +12,11 @@ body{
 .form-row{
   margin:10px;
 }
+
+.mat-radio-button,
+.mat-select,
+.mat-checkbox,
+.mat-input-container{
+  margin-right: 10px;
+  margin-left: 10px;
+}
