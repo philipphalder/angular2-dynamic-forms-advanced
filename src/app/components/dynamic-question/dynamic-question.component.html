@@ -1,0 +1,48 @@
+<div [formGroup]="form">
+  <div [ngSwitch]="question.controlType">
+
+<!-- TEXTBOX -->
+    <div *ngSwitchCase="'textbox'" class="question-card-container" >
+      <md-card class="question-card">
+        <label [attr.for]="question.key">{{question.label}}</label>
+        <md-input-container>
+              <input mdInput [formControlName]="question.key"
+                [id]="question.key" [type]="question.type" [placeholder]="question.placeholder">
+        </md-input-container>
+        <div class="errorMessage" *ngIf="!isValid">{{question.label}} is required</div>        
+      </md-card>
+    </div>
+
+<!-- DROPDOWN -->
+    <div *ngSwitchCase="'dropdown'" class="question-card-container" >
+      <md-card class="question-card">
+        <label [attr.for]="question.key">{{question.label}}</label>
+        <md-select [id]="question.key" [formControlName]="question.key">
+          <md-option *ngFor="let opt of question.options" [value]="opt.key">{{opt.value}}</md-option>
+        </md-select>
+        <div class="errorMessage" *ngIf="!isValid">{{question.label}} is required</div>
+      </md-card>
+    </div>
+
+<!-- OPTIONS -->
+    <div *ngSwitchCase="'options'" class="question-card-container" >
+      <md-card class="question-card"> 
+            <label [attr.for]="question.key">{{question.label}}</label>
+            <md-radio-group [id]="question.key" [formControlName]="question.key" >
+              <md-radio-button *ngFor="let opt of question.options" [value]="opt.key">{{opt.value}}</md-radio-button>
+            </md-radio-group> 
+        <div class="errorMessage" *ngIf="!isValid">{{question.label}} is required</div>
+      </md-card>
+    </div>
+
+<!-- CHECKBOX -->
+    <div *ngSwitchCase="'checkbox'" class="question-card-container" >  
+      <md-card class="question-card"> 
+            <label [attr.for]="question.key">{{question.label}}</label> 
+              <md-checkbox *ngFor="let opt of question.options" [(formControlName)]="question.key" [value]="opt.key">{{question.key}}//{{opt.value}}</md-checkbox>
+        <div class="errorMessage" *ngIf="!isValid">{{question.label}} is required</div>
+      </md-card>
+    </div>
+
+  </div> 
+</div>
