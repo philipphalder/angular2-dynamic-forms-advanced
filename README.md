@@ -1,6 +1,6 @@
-# Angular2DynamicFormsAdvanced
+# Angular2 Dynamic Forms Advanced
 
-Based on the Angular dynamic forms cookbook I would like to implement more form models. `https://angular.io/docs/ts/latest/cookbook/dynamic-form.html`
+Based on the Angular dynamic forms [cookbook](https://angular.io/docs/ts/latest/cookbook/dynamic-form.html) inline link. I would like to implement more form models. 
 
 ## Models
 
