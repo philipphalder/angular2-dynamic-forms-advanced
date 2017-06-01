@@ -11,3 +11,7 @@ Based on the Angular dynamic forms <a href="https://angular.io/docs/ts/latest/co
 | Dropdown            | ✅                 |
 | Group of Checkboxes | ✅                 |
 | Option with Additional Textfield | Work in progress |
+
+## Screenshot
+
+![Screenshot](screenshot.png?raw=true "Screenshot")
