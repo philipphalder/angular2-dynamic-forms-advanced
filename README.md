@@ -9,4 +9,5 @@ Based on the Angular dynamic forms <a href="https://angular.io/docs/ts/latest/co
 | Textfield           | ✅                 |
 | Option              | ✅                 |
 | Dropdown            | ✅                 |
-| Group of Checkboxes | Work in progress  |
+| Group of Checkboxes | ✅                 |
+| Option with Additional Textfield | Work in progress |

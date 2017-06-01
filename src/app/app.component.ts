@@ -18,4 +18,5 @@ export class AppComponent {
   constructor(service: QuestionService) {
     this.questions = service.getQuestions();
   }
+
 }
